@@ -2,19 +2,19 @@ const itens = [
     {
         id: 0,
         nome: "Camiseta",
-        img: "imgs/imgPlaceholder.png",
+        img: "imgs/camisetas.jpg",
         quantidade: 0
     },
     {
         id: 1,
         nome: "Short",
-        img: "imgs/imgPlaceholder.png",
+        img: "imgs/bermuda.jpg",
         quantidade: 0
     },
     {
         id: 2,
-        nome: "Sapato",
-        img: "imgs/imgPlaceholder.png",
+        nome: "Tênis",
+        img: "imgs/tenis.jpg",
         quantidade: 0
     },
 ]
