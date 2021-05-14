@@ -1,0 +1,126 @@
+body {
+    background: #fdf8f8;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background: white;
+    display: flex;
+    max-height: 175px;
+}
+
+.caixa-cabecalho {
+    width: 1000px;
+    margin: auto auto;
+    align-items: center;
+    justify-content: center;
+    padding: 0px 30px 30px 30px;
+    position: relative;
+   
+   
+}
+
+.titulo {
+    text-align: left;
+    top: 115px;
+    margin: 0 0 0 7px;
+    font-size: 1.5em;
+    position: absolute;
+    font-family: 'Montserrat', sans-serif;
+    
+    
+}
+
+.logo {
+    position: relative;
+    width: 200px;
+    margin-left: 24px;
+}
+
+nav {
+    position: absolute;
+    right: 0;
+    top: 70px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+nav li {
+    display: inline;
+    padding-right: 20px;
+    font-size: 1.3em;
+}
+nav a {
+    text-decoration: none;
+    color: black;
+}
+
+nav a:hover {
+    color: red;
+    padding: 4px;
+    border-radius: 10px;
+    transition: 0.3s all;
+    
+}
+
+#produtos {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 0 2%;
+    display: flex;
+}
+
+.nome-produto {
+    font-family: 'Roboto', sans-serif;
+}
+
+.link-carrinho {
+    text-decoration: none;
+    color: green
+  
+}
+
+.link-carrinho:hover {
+    text-decoration: underline;
+}
+
+.link-remove {
+    text-decoration: none;
+    color: red;
+    font-size: 0.9em;
+}
+
+.link-remove:hover {
+    text-decoration: underline;
+}
+
+#carrinho {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 0 2%;
+    display: block;
+}
+
+h2 {
+    margin-left: 15em;
+    margin-top: 4em;
+    margin-bottom: 2em;
+    font-family:'Montserrat', sans-serif;
+}
+
+.produto-single {
+    width: 33.3%;
+    padding: 0 20px;
+}
+
+.produto-single p {
+    text-align: center;
+}
+
+.produto-single a {
+   margin-left: 5em;
+}
+
+.link-remove {
+    margin-left: 20px;
+}
