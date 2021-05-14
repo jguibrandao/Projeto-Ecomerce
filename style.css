@@ -63,6 +63,8 @@ nav a:hover {
     
 }
 
+/* Página principal*/
+
 #produtos {
     max-width: 900px;
     margin: 0 auto;
@@ -123,4 +125,37 @@ h2 {
 
 .link-remove {
     margin-left: 20px;
+}
+
+footer {
+    background: white;
+    display: flex;
+    max-height: 175px;
+    margin-top: 16em;
+}
+
+/* Classe para páginas com menos conteúdo, para que o footer fique no final da tela*/
+
+.footer {
+    background: white;
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    max-height: 175px;
+    margin-top: 16em;
+}
+
+.caixa-footer {
+    width: 1000px;
+    margin: auto auto;
+    padding: 0px 30px 30px 30px;
+    position: relative;
+ 
+}
+
+.copyright {
+   text-align: center;
+  padding-top: 2em;
+  font-family: 'Montserrat', sans-serif;
+   
 }
