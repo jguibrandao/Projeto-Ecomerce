@@ -74,6 +74,7 @@ nav a:hover {
 
 .nome-produto {
     font-family: 'Roboto', sans-serif;
+    margin-bottom: 0.5em;
 }
 
 .link-carrinho {
@@ -112,8 +113,21 @@ h2 {
 
 .produto-single {
     width: 33.3%;
+    max-height: 369px;
     padding: 0 20px;
 }
+
+.produto-single img {
+   height: 300px;
+   width: 300px;
+    border: solid 2px black;
+    border-radius: 10px;
+}
+
+.produto-single img:hover {
+    opacity: 60%;
+    transition: all 0.3s;
+ }
 
 .produto-single p {
     text-align: center;
