@@ -40,7 +40,7 @@ header {
 
 nav {
     position: absolute;
-    right: 0;
+    right: 80;
     top: 70px;
     font-family: 'Montserrat', sans-serif;
 }
@@ -55,18 +55,47 @@ nav a {
     color: black;
 }
 
-nav a:hover {
+ul a:hover {
     color: red;
     padding: 4px;
-    border-radius: 10px;
     transition: 0.3s all;
     
+}
+
+.conta {
+    position: absolute;
+    right: 160;
+    top: 65;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.nomeUsuario {
+    font-size: 1em;
+}
+
+.minhaConta {
+    font-size: 1em;
+    text-align: center;
+    position: absolute;
+    right: 15;
+    top: 18;
+}
+
+.minhaConta-link {
+    text-decoration: none;
+    color: red;
+}
+
+.minhaConta-link:hover {
+    color: red;
+    transition: all 0.3s;
+    text-decoration: underline;
 }
 
 /* Página principal*/
 
 #produtos {
-    max-width: 900px;
+    max-width: 1020px;
     margin: 0 auto;
     padding: 0 2%;
     display: flex;
@@ -104,7 +133,14 @@ nav a:hover {
     display: block;
 }
 
-h2 {
+.titulo-carrinho {
+    text-align: center;
+    font-family:'Montserrat', sans-serif;
+    margin-top: 4.5em;
+    margin-bottom: 2em;
+}
+
+.titulo-produtos {
     margin-left: 15em;
     margin-top: 4em;
     margin-bottom: 2em;
