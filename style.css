@@ -242,3 +242,99 @@ footer {
     cursor: pointer;
 }
 
+/* Pag - Contatos */
+
+.contatos {
+    font-family: 'Montserrat', sans-serif;
+    margin: 6em 0 0 0;
+    padding: 0;
+}
+
+form {
+    margin-left: 5em;
+}
+
+label {
+    display: block;
+}
+
+label, legend {
+    margin-top: 14px;
+}
+
+input {
+    margin-bottom: 15px;
+    margin-top: 5px;
+    padding: 10px 200px 10px 10px
+}
+
+.assunto {
+    margin-top: 10px;
+}
+
+textarea {
+    margin-bottom: 20px;
+    margin-top: 5px;
+}
+
+fieldset {
+    border-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+select {
+    padding: 12px 50px;
+    text-align: center;
+    margin-top: 5px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+}
+
+.tabela {
+    position: absolute;
+    right: 200;
+    top: 200;
+}
+
+.tabela h4 {
+    text-align: center;
+    font-size: 2em;
+    margin-bottom: 0.5em;
+}
+
+table {
+    border-spacing: 0;
+    border-collapse: collapse;
+    font-size: 1.5em;
+}
+
+
+thead {
+	background: #555555;
+	color: white;
+	font-weight: bold;
+}
+
+td, th {
+	border: 1px solid #000000;
+	padding: 26px 80px;
+}
+
+.checkbox {
+    margin-top: 20px;
+}
+
+.enviar {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    padding: 30px 100px;
+    margin-top: 25px;
+}
+
+.enviar:hover {
+    color: red;
+    transition: all 0.3s;
+    cursor: pointer;
+}
+
