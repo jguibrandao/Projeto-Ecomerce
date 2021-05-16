@@ -93,6 +93,13 @@ ul a:hover {
     text-decoration: underline;
 }
 
+.login-img {
+    max-width: 50px;
+    position: absolute;
+    top: 13;
+    right: 128;
+}
+
 /* Página principal*/
 
 #produtos {
