@@ -2,6 +2,7 @@ body {
     background: #fdf8f8;
     margin: 0;
     padding: 0;
+    font-weight: bold;
 }
 
 header {
@@ -108,8 +109,8 @@ ul a:hover {
 
 .link-carrinho {
     text-decoration: none;
-    color: green
-  
+    color: green;
+    font-weight: normal;
 }
 
 .link-carrinho:hover {
@@ -209,3 +210,28 @@ footer {
   font-family: 'Montserrat', sans-serif;
    
 }
+
+/* Minha conta - pag */
+
+.lista-conta {
+    list-style: none;
+    font-family: "Montserrat", sans-serif;
+    font-weight: bold;
+    font-size: 1.54em;
+    margin: 0;
+    text-align: center;
+}
+
+.lista-conta:first-child {
+    margin-top: 2.3em;
+}
+
+.lista-conta li {
+    margin-bottom: 4em;
+}
+
+.lista-conta li:hover {
+    box-shadow: 2px 2px 2px grey;
+    cursor: pointer;
+}
+
