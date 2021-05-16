@@ -31,6 +31,7 @@ inicializarLoja = () => {
         </div>
         `;
     })
+    verificaQuantidade();
 }
 
 inicializarLoja();
@@ -48,6 +49,22 @@ atualizarCarrinho = () => {
             `;
         }
     })
+    verificaQuantidade();
+}
+
+
+function verificaQuantidade() {
+    var tem;
+    var estadoCarrinho = document.getElementsByClassName("estado-carrinho");
+    for(var i = 0; i < itens.length; i++) {
+        if(itens[i].quantidade <= 0) {
+            tem = false;
+        } else {tem = true}
+    }
+
+    if(tem == false) {
+        estadoCarrinho.innerHTML = `<p>Seu carrinho está vazio<p>`;
+    }
 }
 
 var links = document.getElementsByClassName("link-carrinho");
