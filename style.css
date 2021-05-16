@@ -117,7 +117,8 @@ ul a:hover {
 .link-carrinho {
     text-decoration: none;
     color: green;
-    font-weight: normal;
+    font-weight: bold;
+    font-family: 'Roboto', sans-serif;
 }
 
 .link-carrinho:hover {
