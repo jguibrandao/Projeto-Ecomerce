@@ -22,10 +22,83 @@
                 </nav>
             </div>
         </header>
-        <main>
+        <main class="contatos">
+            <form>
+                <label for="nomesobrenome">Informe seu nome completo</label>
+                <input type="text" id="nomesobrenome" class="input-padrao" required>
+
+                <label for="email">Informe seu Email</label>
+                <input type="email" id="email" class="input-padrao" required placeholder="seuemail@dominio.com">
+
+                <label for="telefone">Informe seu número</label>
+                <input type="number" id="telefone" class="input-padrao" required placeholder="(DDD) 9 XXXX-XXXX">
+
+                <fieldset class="assunto">
+                    <legend>Qual o assunto a ser discutido?</legend>
+                    <select>
+						<option>Pagamento</option>
+						<option>Minha conta</option>
+						<option>Outro (especifique)</option>
+					</select>
+                </fieldset>
+
+                <label for="mensagem">Mensagem</label>
+                <textarea cols="93" rows="10" id="mensagem" class="input-padrao" required placeholder="SUA MENSAGEM"></textarea>
+
+                <fieldset>
+					<legend>Como prefere o nosso contato?</legend>
+					<label for="radio-email"><input type="radio" name="contato" value="email" id="radio-email" checked>Email</label>
+					
+					<label for="radio-telefone"><input type="radio" name="contato" value="telefone" id="radio-telefone">Telefone</label>
+					
+					<label for="radio-whatsapp"><input type="radio" name="contato" value="whatsapp" id="radio-whatsapp">Whatsapp</label>
+
+                    <label><input type="checkbox" class="checkbox" checked>Quero receber novidades por email</label>
+				</fieldset>
+
+                <input type="submit" value="Enviar mensagem" class="enviar">
+            </form>
+
+            <div class="tabela">
+                <h4>Horário de atendimento</h4>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Dia</th>
+                            <th>Horário</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Segunda</td>
+                            <td>8h ~ 20h</td>
+                        </tr>
+                        <tr>
+                            <td>Terça</td>
+                            <td>8h ~ 20h</td>
+                        </tr>
+                        <tr>
+                            <td>Quarta</td>
+                            <td>8h ~ 20h</td>
+                        </tr>
+                        <tr>
+                            <td>Quinta</td>
+                            <td>8h ~ 20h</td>
+                        </tr>
+                        <tr>
+                            <td>Sexta</td>
+                            <td>8h ~ 20h</td>
+                        </tr>
+                        <tr>
+                            <td>Sabado-Domingo</td>
+                            <td>Fechado</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
             
         </main>
-        <footer class="footer">
+        <footer>
             <div class="caixa-footer">
                 <p class="copyright">© Pipones Digital Shop</p>
             </div>   
