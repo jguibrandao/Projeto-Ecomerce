@@ -205,6 +205,28 @@ ul a:hover {
     margin-left: 20px;
 }
 
+.estado-carrinho {
+    text-align: center;
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: bold;
+}
+
+#pagamento {
+    text-align: center;
+    padding: 10px;
+    position: absolute;
+    left: 45.8%;
+    margin-top: 35px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+}
+
+.pagamento:hover {
+    color: green;
+    transition: all 0.3s;
+    cursor: pointer;
+}
+
 footer {
     background: white;
     display: flex;
