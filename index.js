@@ -19,26 +19,19 @@ var itens = [
     },
 ]
 
-/*itens = [
-    {
-        id: 3,
-        nome: "Calça",
-        img: "imgs/calça-moletom.jpg",
-        quantidade: 0
-    },
-    {
-        id: 4,
-        nome: "Blusa",
-        img: "imgs/imgPlaceholder.png",
-        quantidade: 0
-    },
-    {
-        id: 5,
-        nome: "Tênis",
-        img: "imgs/imgPlaceholder.png",
-        quantidade: 0
-    },
-]*/
+function verificaEstado() {
+    var tem = false
+    for(var i = 0; i < itens.length; i++) {
+        if(itens[i].quantidade > 0) {
+            tem = true;
+            break
+        }
+    }
+    if(tem == false) {
+        var containerCarrinho = document.getElementById("carrinho");
+        containerCarrinho.innerHTML = `<h3 class="estado-carrinho">Carrinho vazio</h3>`;
+    }
+}
 
 inicializarLoja = () => {
     var containerProdutos = document.getElementById("produtos");
@@ -52,6 +45,8 @@ inicializarLoja = () => {
         </div>
         `;
     })
+    var containerCarrinho = document.getElementById("carrinho");
+    containerCarrinho.innerHTML = `<h3 class="estado-carrinho">Carrinho vazio</h3>`;
     document.getElementById("genero-link1").style.fontStyle = "italic";
     document.getElementById("genero-link1").style.color = "red";
 }
@@ -80,6 +75,7 @@ for(var i = 0; i < links.length; i++) {
         let key = this.getAttribute("key");
         itens[key].quantidade++;
         atualizarCarrinho();
+        verificaEstado();
     });
 }
 
@@ -88,6 +84,7 @@ removerDoCarrinho = function(id) {
         if (itens[i].id == id) {
             itens[i].quantidade -= 1;
             atualizarCarrinho();
+            verificaEstado();
         }
     }
 }
@@ -134,6 +131,7 @@ mudarGeneroMasculino = function() {
         document.getElementById("genero-link2").style.fontStyle = "normal";
         document.getElementById("genero-link2").style.color = "black";
         atualizarLoja();
+        verificaEstado();
     }
 
 mudarGeneroFeminino = function() {
@@ -162,15 +160,27 @@ mudarGeneroFeminino = function() {
     document.getElementById("genero-link1").style.fontStyle = "normal";
     document.getElementById("genero-link1").style.color = "black";
     atualizarLoja();
+    verificaEstado();
 }
 
 function pagamentoBotao() {
-    alert("Compra realizada");
-    for(var i; i < itens.length; i++) {
-        itens[i].quantidade = 0;
+    var tem = false
+    for(var i = 0; i < itens.length; i++) {
+        if(itens[i].quantidade > 0) {
+            tem = true;
+            break
+        }
     }
-    var containerCarrinho = document.getElementById("carrinho");
-    containerCarrinho.innerHTML = `<h3 class="estado-carrinho">Carrinho vazio</h3>`;
+    if(tem == false) {
+        alert("Erro, você não tem itens no carrinho")
+    } else {
+        alert("Compra realizada");
+        for(var i = 0; i < 3; i++) {
+        itens[i].quantidade = 0;
+        }
+        var containerCarrinho = document.getElementById("carrinho");
+        containerCarrinho.innerHTML = `<h3 class="estado-carrinho">Carrinho vazio</h3>`;
+    }
 }
 
 //chamadas da função
