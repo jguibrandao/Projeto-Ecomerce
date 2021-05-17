@@ -52,6 +52,8 @@ inicializarLoja = () => {
         </div>
         `;
     })
+    document.getElementById("genero-link1").style.fontStyle = "italic";
+    document.getElementById("genero-link1").style.color = "red";
 }
 
 inicializarLoja();
@@ -162,6 +164,20 @@ mudarGeneroFeminino = function() {
     atualizarLoja();
 }
 
+function pagamentoBotao() {
+    alert("Compra realizada");
+    for(var i; i < itens.length; i++) {
+        itens[i].quantidade = 0;
+    }
+    var containerCarrinho = document.getElementById("carrinho");
+    containerCarrinho.innerHTML = `<h3 class="estado-carrinho">Carrinho vazio</h3>`;
+}
+
+//chamadas da função
 document.getElementById("genero-link1").onclick = mudarGeneroMasculino;
 document.getElementById("genero-link2").onclick = mudarGeneroFeminino;
+
+document.getElementById("pagamento").onclick = pagamentoBotao;
+
+
 
