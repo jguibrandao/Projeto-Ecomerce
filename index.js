@@ -1,4 +1,4 @@
-const itens = [
+var itens = [
     {
         id: 0,
         nome: "Camiseta",
@@ -18,6 +18,27 @@ const itens = [
         quantidade: 0
     },
 ]
+
+/*itens = [
+    {
+        id: 3,
+        nome: "Calça",
+        img: "imgs/calça-moletom.jpg",
+        quantidade: 0
+    },
+    {
+        id: 4,
+        nome: "Blusa",
+        img: "imgs/imgPlaceholder.png",
+        quantidade: 0
+    },
+    {
+        id: 5,
+        nome: "Tênis",
+        img: "imgs/imgPlaceholder.png",
+        quantidade: 0
+    },
+]*/
 
 inicializarLoja = () => {
     var containerProdutos = document.getElementById("produtos");
@@ -68,3 +89,79 @@ removerDoCarrinho = function(id) {
         }
     }
 }
+
+
+function atualizarLoja() {
+    var containerProdutos = document.getElementById("produtos");
+    containerProdutos.innerHTML = "";
+    itens.map((val)=> {
+        containerProdutos.innerHTML += `
+
+        <div class="produto-single"> 
+            <img src="${val.img}"/>
+            <p class="nome-produto">${val.nome}</p>
+            <a class="link-carrinho" key="${val.id}" href="#">Adicionar ao carrinho</a>
+        </div>
+        `;
+    })
+}
+
+mudarGeneroMasculino = function() {
+         itens = [
+            {
+                id: 0,
+                nome: "Camiseta",
+                img: "imgs/camisetas.jpg",
+                quantidade: 0
+            },
+            {
+                id: 1,
+                nome: "Short",
+                img: "imgs/bermuda.jpg",
+                quantidade: 0
+            },
+            {
+                id: 2,
+                nome: "Tênis",
+                img: "imgs/tenis.jpg",
+                quantidade: 0
+            },
+        ]
+        document.getElementById("genero-link1").style.fontStyle = "italic";
+        document.getElementById("genero-link1").style.color = "red";
+        document.getElementById("genero-link2").style.fontStyle = "normal";
+        document.getElementById("genero-link2").style.color = "black";
+        atualizarLoja();
+    }
+
+mudarGeneroFeminino = function() {
+     itens = [
+        {
+            id: 3,
+            nome: "Calça",
+            img: "imgs/calça-moletom.jpg",
+            quantidade: 0
+        },
+        {
+            id: 4,
+            nome: "Blusa",
+            img: "imgs/blusa.jpg",
+            quantidade: 0
+        },
+        {
+            id: 5,
+            nome: "Tênis",
+            img: "imgs/tenis-feminino.jpg",
+            quantidade: 0
+        },
+    ]
+    document.getElementById("genero-link2").style.fontStyle = "italic";
+    document.getElementById("genero-link2").style.color = "red";
+    document.getElementById("genero-link1").style.fontStyle = "normal";
+    document.getElementById("genero-link1").style.color = "black";
+    atualizarLoja();
+}
+
+document.getElementById("genero-link1").onclick = mudarGeneroMasculino;
+document.getElementById("genero-link2").onclick = mudarGeneroFeminino;
+
