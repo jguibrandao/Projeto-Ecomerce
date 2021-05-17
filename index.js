@@ -111,19 +111,19 @@ mudarGeneroMasculino = function() {
                 id: 0,
                 nome: "Camiseta",
                 img: "imgs/camisetas.jpg",
-                quantidade: 0
+                quantidade: itens[0].quantidade
             },
             {
                 id: 1,
                 nome: "Short",
                 img: "imgs/bermuda.jpg",
-                quantidade: 0
+                quantidade: itens[1].quantidade
             },
             {
                 id: 2,
                 nome: "Tênis",
                 img: "imgs/tenis.jpg",
-                quantidade: 0
+                quantidade: itens[2].quantidade
             },
         ]
         document.getElementById("genero-link1").style.fontStyle = "italic";
@@ -140,19 +140,19 @@ mudarGeneroFeminino = function() {
             id: 3,
             nome: "Calça",
             img: "imgs/calça-moletom.jpg",
-            quantidade: 0
+            quantidade: itens[0].quantidade
         },
         {
             id: 4,
             nome: "Blusa",
             img: "imgs/blusa.jpg",
-            quantidade: 0
+            quantidade: itens[1].quantidade
         },
         {
             id: 5,
             nome: "Tênis",
             img: "imgs/tenis-feminino.jpg",
-            quantidade: 0
+            quantidade: itens[2].quantidade
         },
     ]
     document.getElementById("genero-link2").style.fontStyle = "italic";
