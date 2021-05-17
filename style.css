@@ -135,6 +135,25 @@ ul a:hover {
     text-decoration: underline;
 }
 
+.genero {
+    display: flex;
+    max-width: 180px;
+    position: absolute;
+    left: 490px;
+    top: 279px;
+}
+
+#genero-link1, #genero-link2 {
+    margin-left: 20px;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+#genero-link1:hover, #genero-link2:hover {
+    cursor: pointer;
+    color: red;
+    text-decoration: underline;
+}
+
 #carrinho {
     max-width: 900px;
     margin: 0 auto;
