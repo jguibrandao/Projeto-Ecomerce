@@ -221,7 +221,7 @@ ul a:hover {
     font-weight: bold;
 }
 
-.pagamento:hover {
+#pagamento:hover {
     color: green;
     transition: all 0.3s;
     cursor: pointer;
