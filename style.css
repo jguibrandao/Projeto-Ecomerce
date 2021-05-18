@@ -284,6 +284,14 @@ footer {
     cursor: pointer;
 }
 
+#duvidas {
+    margin-bottom: 1em;
+}
+
+#footer-conta {
+    margin-top: 50px;
+}
+
 /* Pag - Contatos */
 
 .contatos {
@@ -380,3 +388,49 @@ td, th {
     cursor: pointer;
 }
 
+/* Sobre - pag */
+
+.sobre-main {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 60px;
+}
+
+.sobre-main h1, .sobre-main h2, .sobre-main h3 {
+    box-shadow: 2px 2px 2px grey;
+}
+
+.sobre-main h2, .sobre-main h3{
+    margin-top: 70px;
+}
+
+.sobre-main h3 {
+    font-size: 1.5em;
+}
+
+.background {
+    margin-bottom: 5px;
+    box-shadow: 2px 2px 4px black;
+}
+
+.mapa {
+    max-height: 250px;
+    width: 40%;
+    margin-top: 20px;
+
+}
+
+.mapa:hover {
+    box-shadow: 2px 2px 4px black;
+    transition: all 0.3s;
+}
+
+.vem {
+    margin-top: 5em;
+    font-size: 1.5em;
+}
+
+#footer-sobre {
+    margin-top: 55px;
+}
