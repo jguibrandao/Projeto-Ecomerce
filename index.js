@@ -137,19 +137,19 @@ mudarGeneroMasculino = function() {
 mudarGeneroFeminino = function() {
      itens = [
         {
-            id: 3,
+            id: 0,
             nome: "Calça",
             img: "imgs/calça-moletom.jpg",
             quantidade: itens[0].quantidade
         },
         {
-            id: 4,
+            id: 1,
             nome: "Blusa",
             img: "imgs/blusa.jpg",
             quantidade: itens[1].quantidade
         },
         {
-            id: 5,
+            id: 2,
             nome: "Tênis",
             img: "imgs/tenis-feminino.jpg",
             quantidade: itens[2].quantidade
